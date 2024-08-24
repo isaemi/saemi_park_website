@@ -28,12 +28,12 @@ body{
     left: 0;
     width: 100%;
     padding: 4rem 12% 4rem;
-    background: rbga(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 5;
-    background-color: var(--bg-color);
 }
 .logo{
     font-size: 3rem;
@@ -110,7 +110,7 @@ span{
 }
 .home-img img{
     position: relative;
-    top: 5rem;
+    top: 3rem;
     width: 32vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
@@ -122,7 +122,7 @@ span{
                 0 0 50px var(--main-color),
                 0 0 100px var(--main-color);
 }
-.home-content p{
+.home-content p{ 
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.8;
@@ -602,7 +602,7 @@ span{
 
 @media(max-width: 895px){
     #menu-icon{
-        display: block;
+        display: active;
     }
     .navbar{
         position: absolute;
@@ -617,8 +617,8 @@ span{
         border-bottom: 2px solid var(--main-color);
         display: none;
     }   
-    .navbar .active{
-        display:block
+    .navbar.active{
+        display: block;
     }
     .navbar a{
         display: block;
