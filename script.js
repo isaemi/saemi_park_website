@@ -26,3 +26,22 @@ document.addEventListener('DOMContentLoaded', () => {
         navbar.classList.toggle('active');
     }
 });
+
+function showLoader(url) {
+    document.querySelector('.loader').style.display = 'block';
+
+    setTimeout(function() {
+        window.location.href = url;
+    }, 1000);
+}
+
+// Add event listener to the Resume button
+document.querySelector('.btn-group .btn[href="resume.html"]').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default link action
+    showLoader('resume.html');
+});
+
+document.addEventListener('DOMContentLoaded',() =>{
+    const background = document.getElementById('background-container');
+
+})
