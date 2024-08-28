@@ -13,6 +13,9 @@
     --second-bg-color: #131313;
     --text-color: white;
     --main-color: rgb(217, 81, 217);
+    --border1: pink;
+    --border2: purple;
+    --border3: red;
 }
 html{
     font-size: 60%;
@@ -137,7 +140,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10rem;
+    gap: 10rem;    
 }
 
 .home-content{
@@ -151,7 +154,18 @@ section{
     padding: 10px 30px 30px 30px;
     border-radius: 4rem;
     background-color: rgba(70, 57, 59, 0.8);
+    box-shadow: 0 0 25px var(--main-color);
+    overflow: hidden;
 }
+.home-content::after {
+    content: '';
+    display: absolute;
+    width: 110%;
+    height: 110%;
+    background: linear-gradient(145deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
+    z-index: -1;
+}
+
 span{
     color: var(--main-color);
 }
@@ -192,6 +206,14 @@ span{
     line-height: 1.8;
     max-width: 1000px
 }
+
+.social-icons,
+.btn-group{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
 .social-icons a{
     display: inline-flex;
     justify-content: center;
@@ -433,15 +455,15 @@ span{
     gap: 2.5rem;
 }
 .aboutme-box{
-    background-color: var(--main-color);
     height: 300px;
+    background: linear-gradient(145deg, var(--main-color), rgb(48, 51, 234));
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
 .aboutme-box:hover{
-    background: white;
+    background: linear-gradient(145deg, white, rgb(48, 51, 234));
     color: black;
     border: 5px solid var(--main-color);
     transform: scale(1.03);
@@ -555,10 +577,13 @@ span{
     background: var(--bg-color);
     margin: 1.5rem 0;
     resize: none;   
+    box-shadow: 0 0 15px var(--main-color);
 }
+
 .contact form .btn{
     margin-top: 2rem;
 }
+
 .footer{
     position: relative;
     bottom: 0;
@@ -728,10 +753,9 @@ span{
     transform: translate(-50%, -50%);
     padding: 100px;
     background: #313c7e;
-    border: 5px solid plum;
     border-radius: 50%;
     box-shadow: 45px 45px 45px rgba(0,0,0,.8);
-    z-index: 1;
+    z-index: 5;
     overflow: hidden;
 }
 .loader:before{
@@ -750,6 +774,7 @@ span{
     background: rgb(134, 69, 132);
     transform: rotate(45deg) translate(10px, 10px);
     animation: animate 1s linear infinite;
+
 }
 .heart:before{
     content: '';
