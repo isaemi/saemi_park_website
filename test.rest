@@ -1,9 +1,0 @@
-  GET http://localhost:1337
-
-POST http://localhost:1337
-Contest-Type: application/json
-
-{
-    "name": "james",
-    "location": "23 hello world street"
-}
