@@ -35,9 +35,8 @@ function showLoader(url) {
     }, 1000);
 }
 
-// Add event listener to the Resume button
 document.querySelector('.btn-group .btn[href="resume.html"]').addEventListener('click', function (event) {
-    event.preventDefault(); // Prevent the default link action
+    event.preventDefault();
     showLoader('resume.html');
 });
 
@@ -89,4 +88,17 @@ document.addEventListener('DOMContentLoaded', () => {
             return values[randomIndex];
         }
     }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    var icon = document.getElementById("moonIcon");
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "images/sun.png";
+        } else{
+            icon.src = "images/mopon.png"
+        }
+    }
+
 });

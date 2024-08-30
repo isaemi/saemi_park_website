@@ -17,6 +17,16 @@
     --border2: purple;
     --border3: red;
 }
+.dark-theme{
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: white;
+    --main-color: rgb(217, 81, 217);
+    --border1: pink;
+    --border2: purple;
+    --border3: red;
+}
+
 html{
     font-size: 60%;
     overflow-x: hidden;
@@ -156,6 +166,8 @@ section{
     background-color: rgba(70, 57, 59, 0.8);
     box-shadow: 0 0 25px var(--main-color);
     overflow: hidden;
+    align-items: center;
+    text-align: center;
 }
 .home-content::after {
     content: '';
@@ -183,9 +195,7 @@ span{
     margin-top: 1.5rem;
     line-height: 1;
 }
-.home-img{
-    border-radius: 50%; 
-}
+
 .home-img img{
     position: relative;
     top: 3rem;
@@ -206,14 +216,10 @@ span{
     line-height: 1.8;
     max-width: 1000px
 }
-
-.social-icons,
-.btn-group{
-    display: flex;
-    width: 100%;
-    justify-content: center;
+#moonicon{
+    width: 30px;
+    cursor: pointer;
 }
-
 .social-icons a{
     display: inline-flex;
     justify-content: center;
@@ -301,23 +307,23 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: "Frontend Developerr";
+        content: "Full Stack Developer";
     }
     21%,
     40%{
-        content: "Web Developer";
+        content: "UI / UX Designer";
     }
     41%,
     60%{
-        content: "UI / UX Designer";       
+        content: "Tech Enthusiast";       
     }
     61%,
     80%{
-        content: "Web Developer";
+        content: "Tech Problem Solver";
     }
     81%,
     100%{
-        content: "Software Tester";
+        content: "Future Tech Leader";
     }
 }
 @keyframes typing{
@@ -456,7 +462,7 @@ span{
 }
 .aboutme-box{
     height: 300px;
-    background: linear-gradient(145deg, var(--main-color), rgb(48, 51, 234));
+    background: linear-gradient(145deg, var(--main-color), rgb(229, 176, 229),rgb(48, 51, 234, 0.8));
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
