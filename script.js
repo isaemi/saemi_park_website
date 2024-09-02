@@ -91,13 +91,13 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    var icon = document.getElementById("moonIcon");
+    var icon = document.getElementById("moonicon");
     icon.onclick = function(){
         document.body.classList.toggle("dark-theme");
         if(document.body.classList.contains("dark-theme")){
-            icon.src = "images/sun.png";
+            icon.src = "images/sun.svg";
         } else{
-            icon.src = "images/mopon.png"
+            icon.src = "images/moon.svg"
         }
     }
 
