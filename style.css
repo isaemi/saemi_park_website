@@ -9,16 +9,17 @@
     font-family: "Poppins", sans-serif;
 }
 :root{
-    --bg-color: pink;
-    --second-bg-color: beige;
-    --text-color: black;
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: white;
     --main-color: rgb(217, 81, 217);
-    --background-color: radial-gradient(at 18% 99%, rgb(28, 28, 25) 0px, transparent 50%) repeat scroll 0% 0%, 
+    --background-color: 
+    radial-gradient(at 18% 99%, rgb(28, 28, 25) 0px, transparent 50%) repeat scroll 0% 0%, 
     radial-gradient(at 97% 8%, rgb(16, 17, 17) 0px, transparent 50%) repeat scroll 0% 0%, 
     radial-gradient(at 79% 82%, rgb(33, 32, 32) 0px, transparent 50%) repeat scroll 0% 0%,
     radial-gradient(at 96% 10%, rgb(23, 20, 24) 0px, transparent 50%) repeat scroll 0% 0%,    
     radial-gradient(at 42% 20%, rgb(30, 34, 34) 0px, transparent 50%) repeat scroll 0% 0%,
-    radial-gradient(at 4% 49%, rgb(16, 16, 16) 0px, transparent 50%) repeat scroll 0% 0%, rgba(0, 0, 0, 0) radial-gradient(at 57% 33%, rgb(218, 83, 228) 3px, hwb(245 60% 0%) 50%) repeat scroll 0% 0%;
+    radial-gradient(at 4% 49%, rgb(16, 16, 16) 0px, transparent 50%) repeat scroll 0% 0%, rgba(0, 0, 0, 0) radial-gradient(at 57% 33%, rgb(218, 83, 228) 3px, hwb(245 65% 20%) 50%) repeat scroll 0% 0%;
 }
 .dark-theme{
     --bg-color: #080808;
