@@ -35,10 +35,6 @@ function showLoader(url) {
     }, 1000);
 }
 
-document.querySelector('.btn-group .btn[href="resume.html"]').addEventListener('click', function (event) {
-    event.preventDefault();
-    showLoader('resume.html');
-});
 
 document.addEventListener('DOMContentLoaded', () => {
     const group = document.querySelector('.group');
