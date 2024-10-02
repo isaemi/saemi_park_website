@@ -21,6 +21,7 @@
     radial-gradient(at 42% 20%, rgb(30, 34, 34) 0px, transparent 50%) repeat scroll 0% 0%,
     radial-gradient(at 4% 49%, rgb(16, 16, 16) 0px, transparent 50%) repeat scroll 0% 0%, rgba(0, 0, 0, 0) radial-gradient(at 57% 33%, rgb(218, 83, 228) 3px, hwb(245 65% 20%) 50%) repeat scroll 0% 0%;
 }
+
 .dark-theme{
     --bg-color: #080808;
     --second-bg-color: #131313;
@@ -367,6 +368,7 @@ span{
         width: calc(100% + 8px);
     }
 }
+
 .heading{
     font-size: 8rem;
     text-align: center;
@@ -521,9 +523,10 @@ span{
 .project .heading{
     margin-bottom: 5rem;
 }
-.project-box img{
-    width: 15rem;
-    border-radius: 50%;
+.project-box img, .temp{
+    width: 30rem;
+    height: 20rem;
+    border-radius: 10px;
     border: 3px solid var(--main-color);
     box-shadow: 0 0 25px var(--main-color);
 }

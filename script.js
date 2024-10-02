@@ -96,5 +96,4 @@ document.addEventListener('DOMContentLoaded', () => {
             icon.src = "images/moon.svg"
         }
     }
-
 });
