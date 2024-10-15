@@ -498,7 +498,7 @@ span{
     max-height: 200px;
     justify-content: left;
     align-items: baseline;
-    padding: 5rem 5rem;
+    padding: 20px 20px;
 }
 .aboutme-info h4{
     font-size: 3rem;
@@ -530,6 +530,16 @@ span{
     border: 3px solid var(--main-color);
     box-shadow: 0 0 25px var(--main-color);
 }
+.proj_desc1 {
+    font-size: 18px;
+    color: #4a5dc7;
+}
+
+.proj_desc2 {
+    font-size: 18px;
+    color: #4a5dc7;
+}
+
 .wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -560,9 +570,6 @@ span{
 }
 .project-item h2{
     font-size: 2.8rem;
-}
-.project-item p{
-    font-size: 1.3rem;
 }
 #star{
     color: gold;
