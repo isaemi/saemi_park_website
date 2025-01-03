@@ -302,7 +302,7 @@ span{
     position: relative;
 }
 .text-animation span::before{
-    content: "Web Developer";
+    content: "Data Science Student";
     color: var(--main-color);
     animation: words 20s infinite;
 }
@@ -324,23 +324,23 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: "Full Stack Developer";
+        content: "Hackathon Addict";
     }
     21%,
     40%{
-        content: "UI / UX Designer";
+        content: "Programming Enthusiast";
     }
     41%,
     60%{
-        content: "Tech Enthusiast";       
+        content: "Community Builder";       
     }
     61%,
     80%{
-        content: "Tech Problem Solver";
+        content: "Part-Time Designer";
     }
     81%,
     100%{
-        content: "Future Tech Leader";
+        content: "Persistent Learner";
     }
 }
 @keyframes typing{
@@ -500,17 +500,14 @@ span{
     align-items: baseline;
     padding: 10px 10px;
 }
-.aboutme-info h4{
+.aboutme-box h4{
     font-size: 3rem;
     font-weight: 800;
     line-height: 2;
 }
 .aboutme-info p{
-    font-size: 1.6rem;
-    font-weight: 600;
+    font-size: 1.8rem;
     max-height: 100px;
-    line-height: 1.7;
-    margin: auto;
 }
 
 .project-box{
@@ -757,6 +754,7 @@ span{
     .home-content p{
         max-width: 600px;
         margin: 0 auto;
+        font-weight: bold;
     }
     .home-img img{
         margin-top: 3rem;
