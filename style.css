@@ -436,6 +436,7 @@ span{
     box-shadow: 0 0 10px var(--main-color);
     cursor: pointer;
     transition: 0.3s ease in-out;
+    font-size: 16px;
 }
 .timeline-content:hover{
     transform: scale(1.05);
@@ -443,15 +444,15 @@ span{
 }
 .timeline-content h3{
     font-size: 20px;
-    color: white;
     margin: 0 0 10px;
     font-weight: 500;
 }
 .timeline-content p{
-    color: white;
-    font-size: 16px;
-    font-weight: 300;
     line-height: 22px;
+    margin: 0 0 10px;
+}
+.timeline-content li{
+    margin-left: 20px;
 }
 
 ::-webkit-scrollbar{
