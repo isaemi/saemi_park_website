@@ -374,11 +374,11 @@ span{
     text-align: center;
     margin: 3rem 0;
 }
-.education{
+.experiences{
     padding: 100px 15px;
 
 }
-.education h2{
+.experiences h2{
     margin-bottom: 5rem;
 }
 .timeline-items{
@@ -406,7 +406,6 @@ span{
 }
 .timeline-item:nth-child(odd){
     padding-right: calc(50% + 30px);
-    text-align: right;
 }
 .timeline-item:nth-child(even){
     padding-left: calc(50% + 30px);
@@ -471,6 +470,9 @@ span{
 .aboutme h2{
     margin-bottom: 5rem;
     color: white;   
+}
+.aboutme{
+    padding-bottom: 7rem;
 }
 .aboutme-container{
     display: grid;
@@ -568,10 +570,6 @@ span{
 }
 .project-item h2{
     font-size: 2.8rem;
-}
-#star{
-    color: gold;
-    font-size: 2rem;
 }
 .contact h2{
     margin-bottom: 3rem;
@@ -697,9 +695,6 @@ span{
     }
     .timeline-dot{
         left: 0;
-    }
-    .aboutme{
-        padding-bottom: 7rem;
     }
     .project .wrapper{
         grid-template-columns: repeat(2, 1fr);
