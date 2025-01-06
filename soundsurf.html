@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Saemi Park</title>
+    <script src="https://kit.fontawesome.com/977a29eff2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    
+    <header class="header">
+        <a href="index.html" class="logo">Saemi <span> Park </span></a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="info.html#aboutme" class="active">About</a>
+            <a href="info.html#experiences">Experience</a>
+            <a href="info.html#project">Projects</a>
+            <a href="info.html#contact">Contact</a>
+            <img src="images/moon.svg" id="moonicon">
+        </nav>
+    </header>
+    <section id="soundsurf">
+            <p class="project-heading"><i class="fa-solid fa-arrow-left"></i><a href="info.html#project">Back to the Project</a></p>
+            <div class="project-title">
+                <h1>SoundSurf</h1>
+                <p>October 6, 2024</p>
+            </div>
+            <img class="project-img" src="images/SoundSurf2.png">
+            <p class="project-description">
+                SoundSurf is a voice-activated, AI-powered web browser designed to assist people with physical disabilities in accessing the Internet, inspired by a personal experience in which I witnessed a tragic situation with a relative. This project helped our team win Stormhacks 2024 and the Best Social Good Hacks award.<br><br>
+
+                We chose Electron.js for the browser and created a full browser instead of a simpler solution like a Chrome extension. The reason we went with a browser was due to permission issues that users would need to grant, which we felt would make it inaccessible for those who can’t physically interact with a mouse. The UI is simple HTML and CSS, which makes Electron.js more accessible.<br><br>
+
+                We used OpenAI's Whisper to handle speech-to-text because the built-in Chromium speech-to-text requires a GCP API key when running outside of a Chromium browser. We also added an audio-filtering feature to make it usable in noisy environments, which was necessary during hackathon judging sessions. For simple commands, we implemented functions that didn’t require an LLM to process them.<br><br>
+
+                However, for more complex tasks, such as pressing specific buttons or filling out forms, we needed help from an LLM. So, we developed a FastAPI server that takes raw HTML and the user's prompt, uses OpenAI GPT-4 to parse the HTML and find the right accessibility selector, and then returns it to the browser. The browser then queries the selector and interacts with it. This is still a work in progress, as many modern websites are dynamic, using frameworks like React or Vue. The HTML we usually pass in is often too complex and uses too many OpenAI tokens, making it unsustainable.<br><br>
+
+                Looking ahead, we definitely need to fine-tune models specifically for websites and reconsider our browser’s logic. We put too much into our preload.js file, with some items that could have been placed in renderer.js instead.<br><br>
+            </p>
+            <div class="project-btns">
+                <p class="project-btn"><a href=>Github</a></p>
+                <p class="project-btn"><a href=>DevPost</a></p>
+            </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/saemi-p-37b089276/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/isaemi" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/spicyrotato" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/spicyrotato" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="info.html#about">ABOUT</a></li>
+            <li><a href="info.html#experiences">EXPERIENCES</a></li>
+            <li><a href="info.html#project">PROJECTS</a></li>
+            <li><a href="info.html#contact">CONTACT</a></li>
+        </ul>
+        <p class="copyright">© Saemi Park | All Rights Reserved</p> 
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
