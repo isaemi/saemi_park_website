@@ -12,21 +12,21 @@
     --bg-color: #080808;
     --second-bg-color: #131313;
     --text-color: white;
-    --main-color: rgb(217, 81, 217);
+    --main-color: rgb(142, 233, 246);
     --background-color: 
     radial-gradient(at 18% 99%, rgb(28, 28, 25) 0px, transparent 50%) repeat scroll 0% 0%, 
     radial-gradient(at 97% 8%, rgb(16, 17, 17) 0px, transparent 50%) repeat scroll 0% 0%, 
     radial-gradient(at 79% 82%, rgb(33, 32, 32) 0px, transparent 50%) repeat scroll 0% 0%,
     radial-gradient(at 96% 10%, rgb(23, 20, 24) 0px, transparent 50%) repeat scroll 0% 0%,    
     radial-gradient(at 42% 20%, rgb(30, 34, 34) 0px, transparent 50%) repeat scroll 0% 0%,
-    radial-gradient(at 4% 49%, rgb(16, 16, 16) 0px, transparent 50%) repeat scroll 0% 0%, rgba(0, 0, 0, 0) radial-gradient(at 57% 33%, rgb(218, 83, 228) 3px, hwb(245 65% 20%) 50%) repeat scroll 0% 0%;
+    radial-gradient(at 4% 49%, rgb(16, 16, 16) 0px, transparent 50%) repeat scroll 0% 0%, rgba(0, 0, 0, 0) radial-gradient(at 57% 33%, rgb(141, 233, 246) 3px, hwb(245 65% 20%) 50%) repeat scroll 0% 0%;
 }
 
 .dark-theme{
     --bg-color: #080808;
     --second-bg-color: #131313;
     --text-color: white;
-    --main-color: rgb(217, 81, 217);
+    --main-color: rgb(142, 233, 246);
     --background-color: #080808;
 }
 html{
@@ -84,10 +84,10 @@ body{
 .iconContainer i{
     cursor: default;
     user-select: none;
-    transition: 2s;
+    transition: 5s;
     color: transparent;
     opacity: 0.35;
-    -webkit-text-stroke: 1px var(--main-color);
+    
 }
 .iconContainer i:hover{ 
     color: var(--main-color);
@@ -383,22 +383,21 @@ span{
 }
 .aboutme-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
+    grid-template-columns: repeat(2,1fr);
     gap: 2.5rem;
-    align-items: center;
+    align-items: start;
 }
 .aboutme-containers{
     display: flex;
 }
 .aboutme-box {
-    height: 250px;
+    min-height: 250px;
     background: #080808;
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
     text-align: center;
     align-items: baseline;
-    padding: 10px 10px;
     transition: 0.4s ease-in-out;
 }
 .aboutme-pic{
@@ -409,25 +408,38 @@ span{
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
+.aboutme-h4{
+    font-size: 24px;
+    
+}
+#aboutme p{
+    font-size: 15px;
+}
 .aboutme-icon1, .aboutme-icon3, .arrow{
     width: 22px;
 }
 .aboutme-icon2{
     width: 15px;
 }
-.aboutme-box h4{
-    font-size: 2rem;
-    line-height: 1.5;
+.aboutme-icon1, .aboutme-icon2, .aboutme-icon3{
+    padding: 20px 0px 10px;
 }
-.grid{
-    grid-column: 1 / span 2;
+.aboutme-skills{
+    grid-column: 1;
+    grid-row: 2;
     text-align: center;
+    
 }
 .aboutme-box:hover{
     background: linear-gradient(145deg, white, rgb(48, 51, 234));
     color: black;
     border: 5px solid var(--main-color);
     transform: scale(1.03);
+}
+.aboutme-box:nth-child(2){
+    grid-column: 2;
+    grid-row: 1/ span 2;
+    height: 100%;
 }
 .timeline-items{
     max-width: 1200px;
@@ -569,7 +581,7 @@ span{
 .project-title {
     margin-right: auto;   
 }
-#soundsurf h1 {
+#soundsurf h1{
     font-size: 6rem;
     color: var(--text-color);
 }
@@ -577,7 +589,7 @@ span{
     font-size: 2.4rem;
     color: #666;
 }
-#soundsurf, #studylingo, #yogamate, #cybercare {
+#soundsurf{
     max-width: 800px;
     margin: 10rem auto;
     padding: 2rem;
