@@ -27,20 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-document.addEventListener('DOMContentLoaded', () =>{
-    let block1 = document.querySelector('.block1');
-    let block2 = document.querySelector('.block2');
-    let blockImg = document.querySelector('#mouse-icon');
-
-    window.onclick = () =>{
-        blockImg.forEach(img => {
-            block1.remove('active');
-            block2.add('active');
-        })
-    }
-    
-});
-
 function showLoader(url) {
     document.querySelector('.loader').style.display = 'block';
 
