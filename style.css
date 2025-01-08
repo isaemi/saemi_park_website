@@ -516,7 +516,11 @@ span{
 .timeline-content li{
     margin-left: 20px;
 }
-
+#mouse-icon{
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    padding: 5px;
+}
 ::-webkit-scrollbar{
     width: 15px;
 }
