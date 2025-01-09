@@ -392,7 +392,7 @@ span{
 }
 .aboutme-box {
     min-height: 250px;
-    background: #080808;
+    background-color: rgba(0,0,0,.2);
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
@@ -426,11 +426,13 @@ span{
     grid-column: 1;
     grid-row: 2;
     text-align: center;
-    background-color: rgba(var(--main-color), 0,8);
+    background-color: rgba(0,0,0,.2);
+    border-radius: 3rem;
+    padding: 10px;
 }
 .aboutme-box:hover{
     background: linear-gradient(145deg, white, --main-color);
-    color: black;
+    color: var(--background-color);
     border: 5px solid var(--main-color);
     transform: scale(1.03);
 }
