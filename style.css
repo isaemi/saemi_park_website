@@ -35,7 +35,12 @@ html{
 }
 body{
     color: var(--text-color);
-    background: var(--background-color)
+    background: var(--background-color);
+
+}
+#info-background{
+    color: var(--text-color);
+    background-image: url("images/background.webp")
 }
 .box {
     position: absolute;
