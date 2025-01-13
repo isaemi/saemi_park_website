@@ -97,3 +97,63 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+const text = "HI I AM SAEMI"
+const textContainer = document.getElementById('text');
+const letters = text.split('');
+const degreePerChar = 360 / letters.length;
+
+letters.forEach((char, i) => {
+    const span = document.createElement('span');
+    span.textContent = char;
+    span.className = 'letter';
+    span.style.color = i < text.length/2 ? '#ff8833' : '#ffffff';
+    
+    const radian = (degreePerChar * i) * Math.PI / 180;
+    const x = Math.sin(radian) * 150;
+    const z = Math.cos(radian) * 150;
+    span.style.transform = `translate3d(${x}px, 0, ${z}px) rotateY(${degreePerChar * i}deg)`;
+    
+    textContainer.appendChild(span);
+  });
+
+  const circle = document.querySelector('.circle');
+  let isMouseOver = false;
+  let rotationX = -20;
+  let rotationY = 0;
+  let rotationZ = -20;
+  let lastX = 0;
+  let lastY = 0;
+
+  circle.addEventListener('mouseenter', () => {
+    isMouseOver = true;
+    circle.style.animation = 'none';
+  });
+
+  circle.addEventListener('mouseleave', () => {
+    isMouseOver = false;
+    circle.style.animation = 'rotate 15s linear infinite';
+    rotationX = -20;
+    rotationY = 0;
+    rotationZ = -20;
+  });
+
+  circle.addEventListener('mousemove', (e) => {
+    if (!isMouseOver) return;
+
+    const deltaX = e.clientX - lastX;
+    const deltaY = e.clientY - lastY;
+
+    rotationY += deltaX * 0.5;
+    rotationX += deltaY * 0.5;
+
+    circle.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg) rotateZ(${rotationZ}deg)`;
+
+    lastX = e.clientX;
+    lastY = e.clientY;
+  });
+
+  circle.addEventListener('mousedown', (e) => {
+    lastX = e.clientX;
+    lastY = e.clientY;
+  });
