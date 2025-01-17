@@ -806,6 +806,10 @@ span{
     .project .wrapper{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .cybercare-img{
+        display:none;
+    }
 }
 /*Tablet and smaller desktop screens*/
 @media (max-width: 1200px){
@@ -861,7 +865,6 @@ span{
     footer{
         padding: 2rem 3%;
     }
-
 }
 
 @media(max-width: 895px){
