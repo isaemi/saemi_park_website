@@ -270,9 +270,7 @@ span{
     letter-spacing: 0.1rem;
     font-weight: 600;
     transition: 0.3s ease-in-out;
-    cursor: pointer;    
-}
-.btn{
+    cursor: pointer;
     background: var(--main-color);
     box-shadow: 0 0 25px var(--main-color);
     color: black;
@@ -484,6 +482,7 @@ span{
 .timeline-item:nth-child(even){
     padding-left: calc(50% + 30px);
 }
+
 .timeline-dot{
     height: 21px;
     width: 21px;
@@ -624,9 +623,7 @@ span{
     text-align: justify;
     margin-bottom: 5rem;
 }
-.project-btn{
-    background-color: rgb(51, 51, 51);
-}
+
 .project-btns{
     display: flex;
     align-items: center;
