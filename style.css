@@ -525,6 +525,11 @@ span{
     font-size: 2.4rem;
     color: #666;
 }
+.projectFont {
+    font-weight: bold;
+    font-size: 20px;
+}
+
 #soundsurf{
     max-width: 800px;
     margin: 10rem auto;
@@ -558,36 +563,95 @@ span{
     transform: scale(1.05);
     box-shadow: 0 0 50px var(--main-color);
 }
-.contact form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    margin: 5rem auto;
+/* Event Collection Section */
+.events-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 4rem 2rem;
     text-align: center;
 }
-.contact form .input-box{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.contact form .input-box input,
-.contact form textarea{
-    width: 100%;
-    padding: 2.5rem;
-    font-size: 1.8rem;
-    border-radius: 2rem;
-    border: 2px solid var(--main-color);
+
+.events-container h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
     color: var(--text-color);
-    background: var(--bg-color);
-    margin: 1.5rem 0;
-    resize: none;   
-    box-shadow: 0 0 15px var(--main-color);
 }
 
-.contact form .btn{
-    margin-top: 2rem;
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
 }
+
+/* Event Card */
+.event-card {
+    background: rgba(0, 0, 0, 0.8);
+    border: 3px solid rgba(238, 238, 238, 0.2);
+    border-radius: 2rem;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    transition: 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.event-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    border: 3px solid var(--main-color);
+    box-shadow: 0 0 50px var(--main-color);
+}
+
+/* Event Image */
+.event-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Event Title */
+.event-title {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Event Date */
+.event-date {
+    font-size: 1.6rem;
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+/* Event Description */
+.event-description {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 2rem;
+}
+
+/* Event Link */
+.event-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    border: 2px solid var(--main-color);
+    background: var(--main-color);
+    color: black;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.event-btn:hover {
+    background: transparent;
+    color: var(--main-color);
+}
+
 
 .footer{
     position: relative;
