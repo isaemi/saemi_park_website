@@ -40,7 +40,7 @@ body{
 }
 #info-background{
     color: var(--text-color);
-    background-image: url("images/background.webp")
+    background-image: url("images/background.webp");
 }
 .box {
     position: absolute;
@@ -57,7 +57,7 @@ body{
     transform: rotate(-30deg);
     display: flex;
     flex-direction: column;
-    gap: 1 em;
+    gap: 1em;
 }
 .iconContainer{
     display: flex;
