@@ -1,0 +1,29 @@
+# OS/IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Node (만약 향후 추가될 경우)
+node_modules/
+
+# Build
+dist/
+build/
+
+# Env
+.env
+.env.*
+
+# Cache/Temp
+.cache/
+*.tmp
+
+# macOS 특유 파일
+._*
+.Spotlight-V100
+.Trashes
