@@ -8,7 +8,7 @@ Thumbs.db
 *.log
 npm-debug.log*
 
-# Node (만약 향후 추가될 경우)
+# Node
 node_modules/
 
 # Build
