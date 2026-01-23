@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-const text = "HI I AM SAEMI"
+
 const textContainer = document.getElementById('text');
 const letters = text.split('');
 const degreePerChar = 360 / letters.length;
