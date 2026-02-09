@@ -12,7 +12,10 @@
     --bg-color: #080808;
     --second-bg-color: #131313;
     --text-color: white;
+    --project-color: white;
     --main-color: rgb(142, 233, 246);
+    --card-background: rgb(0,0, 0, 0.5);
+    --footer-background: rgb(0,0,0,0.3);
     --background-color: 
     radial-gradient(at 18% 99%, rgb(28, 28, 25) 0px, transparent 50%) repeat scroll 0% 0%, 
     radial-gradient(at 97% 8%, rgb(16, 17, 17) 0px, transparent 50%) repeat scroll 0% 0%, 
@@ -23,12 +26,23 @@
 }
 
 .dark-theme{
-    --bg-color: #080808;
-    --second-bg-color: #131313;
+    --bg-color: #f1f2f6;
+    
     --text-color: white;
-    --main-color: rgb(142, 233, 246);
-    --background-color: #080808;
+    --main-color: rgb(138, 125, 208);
+
+   --background-color:
+        radial-gradient(at 10% 15%, rgb(235, 185, 205) 0px, transparent 45%), /* pink */
+        radial-gradient(at 85% 10%, rgb(190, 205, 235) 0px, transparent 45%), /* blue */
+        radial-gradient(at 75% 85%, rgb(195, 235, 215) 0px, transparent 45%), /* mint */
+        radial-gradient(at 35% 30%, rgb(235, 220, 185) 0px, transparent 50%), /* yellow */
+        radial-gradient(at 5% 65%, rgb(210, 195, 235) 0px, transparent 50%),  /* lavender */
+        radial-gradient(at 60% 55%, rgb(185, 220, 235) 0px, transparent 45%), /* sky */
+        radial-gradient(at 25% 75%, rgb(225, 200, 215) 0px, transparent 55%), /* rose */
+        radial-gradient(at 90% 60%, rgb(205, 225, 200) 0px, transparent 55%); /* soft green */
 }
+
+
 html{
     font-size: 60%;
     overflow-x: hidden;
@@ -40,9 +54,18 @@ body{
 }
 #info-background{
     color: var(--text-color);
-    background-image: url("images/background.webp");
+    background-color:rgb(16, 16, 16);
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body#info-background.dark-theme {
+    background-image: url("images/background_dark.png");
 }
 .box {
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -107,7 +130,6 @@ body{
     left: 0;
     width: 100%;
     padding: 4rem 12% 4rem;
-    background: rgba(60, 59, 61, 0.3);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -296,12 +318,9 @@ span{
     font-size: 5rem;
     text-align: center;
     margin: 2rem 0;
+    color: var(--main-color)
 }
-.aboutme h2{
-    color: white;
-    margin-top: 0;
-    margin-bottom: 70px;
-}
+
 .aboutme-text{
     font-size: 15px;
     text-align: center;
@@ -421,7 +440,7 @@ span{
     margin: 6px 0 15px;
 }
 .timeline-content{
-    background-color: var(--bg-color);
+    background-color: var(--card-background);
     border: 3px solid var(--main-color);
     padding: 30px 50px;
     border-radius: 4rem;
@@ -469,12 +488,12 @@ span{
 }
 .proj_desc1 {
     font-size: 18px;
-    color: #4a5dc7;
+    color: var(--project-color);
 }
 
 .proj_desc2 {
     font-size: 18px;
-    color: #4a5dc7;
+    color: var(--project-color);
 }
 
 .wrapper{
@@ -485,7 +504,7 @@ span{
 .project-item{
     min-height: 300px;
     max-width: 450px;
-    background: rgba(0, 0, 0, 0.7);
+    background: var(--card-background);
     border: 3px solid rgba(238, 238, 238, 0.2);
     border-radius: 2rem;
     padding: 30px 60px;
@@ -496,7 +515,7 @@ span{
     justify-content: center;
     text-align: center;
     gap: 1rem;
-    color: white;
+    color: var(--main-color);
     transition: 0.4s ease-in-out;
 }
 .project-item:hover{
@@ -504,9 +523,7 @@ span{
     transform: translateY(-10px)scale(1.03);
     box-shadow: 0 0 50px var(--main-color)
 }
-.project-item h2{
-    font-size: 2.8rem;
-}
+
 .project-header {
     margin-bottom: 4rem;
 }
@@ -648,13 +665,12 @@ span{
     color: var(--main-color);
 }
 
-
 .footer{
     position: relative;
     bottom: 0;
     width: 100%;
     padding: 40px 0;
-    background-color: var(--second-bg-color);
+    background-color: var(--footer-background);
 }
 .footer .social{
     text-align: center;
@@ -874,7 +890,7 @@ span{
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
-        color: white;
+        color: var(--main-color);
     }
     .home{
         flex-direction: column-reverse;
